@@ -1,0 +1,41 @@
+>> num = [32];
+>> den = [1 12 32 0];
+>> [c,p,k] = residue(num,den)
+
+c =
+
+     1
+    -2
+     1
+
+
+p =
+
+    -8
+    -4
+     0
+
+
+k =
+
+     []
+
+>> [num,den] = residue(c,p,k)
+
+num =
+
+     0     0    32
+
+
+den =
+
+     1    12    32     0
+
+>> printsys(num,den)
+ 
+num/den = 
+ 
+            32
+   -------------------
+   s^3 + 12 s^2 + 32 s
+>> 
